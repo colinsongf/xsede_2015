@@ -24,8 +24,9 @@ start-dfs.sh
 ### This is the point in the process where data should be copied into HDFS.
 ### Copy the data into HDFS
 ### ex:
-### hdfs dfs -mkdir -p /user/$USER
-### hdfs dfs -put $WORKDIR/<your_files> /user/$USER/
+hdfs dfs -mkdir -p /user/$USER
+hdfs dfs -put /oasis/scratch/comet/milroy/temp_project/xsede15/lustre_debug.out /user/$USER/
+hdfs dfs -put /oasis/scratch/comet/milroy/temp_project/xsede15/lustre_timeseries.csv /user/$USER/
 
 ### Load in the necessary Spark environment variables
 source $HADOOP_CONF_DIR/spark/spark-env.sh
