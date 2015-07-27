@@ -7,10 +7,10 @@
 ### Environment setup for Hadoop and Spark
 module load hadoop
 module load spark
-export PATH=/opt/hadoop/2.6.0/sbin:$PATH
-export HADOOP_CONF_DIR=$HOME/mycluster.conf
-export WORKDIR=/oasis/scratch/comet/$USER/temp_project
 export PROJECT_DIR=`pwd`
+export PATH=/opt/hadoop/2.6.0/sbin:$PATH
+export HADOOP_CONF_DIR=$PROJECT_DIR/mycluster.conf
+export WORKDIR=/oasis/scratch/comet/$USER/temp_project
 
 ### Workaround to load SLURM env variables when using salloc
 source $PROJECT_DIR/slurm-env.sh
