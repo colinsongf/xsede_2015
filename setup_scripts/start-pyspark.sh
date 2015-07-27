@@ -27,6 +27,7 @@ start-dfs.sh
 hdfs dfs -mkdir -p /user/$USER
 hdfs dfs -put /oasis/scratch/comet/milroy/temp_project/xsede15/lustre_debug.out /user/$USER/
 hdfs dfs -put /oasis/scratch/comet/milroy/temp_project/xsede15/lustre_timeseries.csv /user/$USER/
+hdfs dfs -put /oasis/scratch/comet/milroy/temp_project/xsede15/pivoted.txt /user/$USER/
 
 ### Load in the necessary Spark environment variables
 source $HADOOP_CONF_DIR/spark/spark-env.sh
