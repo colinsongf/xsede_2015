@@ -35,4 +35,4 @@ source $HADOOP_CONF_DIR/spark/spark-env.sh
 ### by Spark, as they do not correctly honor $SPARK_CONF_DIR
 myspark start
 
-pyspark --master=spark://$SPARK_MASTER_IP:7077
+pyspark --master=spark://$SPARK_MASTER_IP:7077 --conf="spark.driver.maxResultSize=4g"
